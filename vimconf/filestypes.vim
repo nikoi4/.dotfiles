@@ -1,5 +1,7 @@
 " Python
 set encoding=utf-8
+let python_highlight_all=1
+
 
 au BufNewFile,BufRead *.py:
     \ set tabstop=4
