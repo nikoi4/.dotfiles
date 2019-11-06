@@ -12,12 +12,16 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
+
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
+
+" File browsing
 Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'scrooloose/nerdtree'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -28,9 +32,26 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ycm-core/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
+" commenting uncommenting code
+Plugin 'tpope/vim-commentary'
+" quoting/parenthesizing made simple
+Plugin 'tpope/vim-surround'
+" RipGrep in Vim and display results in a quickfix list 
+Plugin 'jremmen/vim-ripgrep'
+" autopairing insert or delete brackets, parens, quotes in pair
+Plugin 'jiangmiao/auto-pairs'
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " indentation plugins
 Plugin 'vim-scripts/indentpython.vim'
+" syntax plugins
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+" vim theme
+"Plugin 'jnurmine/Zenburn'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
