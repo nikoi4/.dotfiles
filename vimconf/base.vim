@@ -1,11 +1,24 @@
+let mapleader = "\<space>"
 " general config
 syntax on
-" set t_Co=256
+set t_Co=256
 set background=dark
+color termschool
+set history=1000
+set hidden  "buffer hiding to switch to another buffer without saving
+set mouse=a
+set noswapfile
+set undofile
+set undodir=~/.vim/undovim
+set modifiable
+set autoread
+set incsearch
+set hlsearch
+
 "rows numbers and relative to current row
 set number
 set relativenumber
-let mapleader = " "
+
 "wrap and linebreak text
 set wrap
 set linebreak
@@ -44,6 +57,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 
+
 "keyboard mappings
 
 " disable highlighting
@@ -57,6 +71,7 @@ nnoremap <C-L> :vsp<CR>
 " set/unset global clipboard
 noremap <leader>] :set clipboard=unnamed<CR>
 noremap <leader>[ :set clipboard=<CR>
-" set ipdb
-inoremap ;i import ipdb;ipdb.set_trace(context=20)<Esc>_
-
+" save and quit
+noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
+noremap <leader>x :x<CR>

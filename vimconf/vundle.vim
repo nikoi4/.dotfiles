@@ -33,7 +33,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ycm-core/YouCompleteMe'
-Plugin 'mattn/emmet-vim'
 " commenting uncommenting code
 Plugin 'tpope/vim-commentary'
 " quoting/parenthesizing made simple
@@ -47,10 +46,11 @@ Plugin 'jiangmiao/auto-pairs'
 " indentation plugins
 Plugin 'vim-scripts/indentpython.vim'
 " syntax plugins
-Plugin 'vim-syntastic/syntastic'
+Plugin 'mattn/emmet-vim'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-" vim theme
-"Plugin 'jnurmine/Zenburn'
+" vim themes
+Plugin 'rafi/awesome-vim-colorschemes'
 
 
 " All of your Plugins must be added before the following line
