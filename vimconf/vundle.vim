@@ -46,11 +46,21 @@ Plugin 'jiangmiao/auto-pairs'
 " indentation plugins
 Plugin 'vim-scripts/indentpython.vim'
 " syntax plugins
-Plugin 'mattn/emmet-vim'
-" Plugin 'vim-syntastic/syntastic'
+Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css'] }
 Plugin 'nvie/vim-flake8'
+" Plugin 'vim-syntastic/syntastic'
+
+" plugins for js and react
+Plugin 'othree/yajs.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'mhartington/oceanic-next'
+" Plugin 'dense-analysis/ale' "for lingting goto and completition js
+" Plugin 'maxmellon/vim-jsx-pretty'
+" Plugin 'vim-javascript'
+
 " vim themes
 Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'kristijanhusak/vim-hybrid-material'
 
 
 " All of your Plugins must be added before the following line
