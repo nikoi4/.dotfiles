@@ -71,11 +71,11 @@ let g:airline#extensions#branch#enabled = 1
 " emmet
 let g:user_emmet_install_global = 0
 
-let g:user_emmet_settings = {
-\  'javascript' : {
-\      'extends' : 'jsx',
-\  },
-\}
+" let g:user_emmet_settings = {
+" \  'javascript' : {
+" \      'extends' : 'jsx',
+" \  },
+" \}
 
 autocmd FileType html,css,javascript,js,jsx EmmetInstall
 
