@@ -59,6 +59,7 @@ nnoremap <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader><S-G>  :YcmCompleter GoToReferences<CR>
 
 " nerdtree config
+nnoremap <leader><S-N> :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 let NERDTreeShowHidden=1
 
@@ -104,3 +105,6 @@ noremap <leader>q :q<CR>
 noremap <leader>x :x<CR>
 " close buffer
 noremap <leader>c :bd<CR>
+" find with Rg
+nnoremap <leader>/ :Rg<CR>
+nnoremap <leader>? :Rg -w
