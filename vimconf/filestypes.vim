@@ -16,6 +16,8 @@ au BufNewFile,BufRead *.py set fileformat=unix
 au BufNewFile,BufRead *.py let python_highlight_all=1
 
 " js 
+" ipdb for python
+" autocmd BufNewFile,BufRead *.js inoremap ;i debugger;<Esc>_
 au BufNewFile,BufRead *.js set tabstop=2
 au BufNewFile,BufRead *.js set softtabstop=2
 au BufNewFile,BufRead *.js set shiftwidth=2

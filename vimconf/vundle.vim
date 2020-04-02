@@ -46,7 +46,7 @@ Plugin 'jiangmiao/auto-pairs'
 " indentation plugins
 Plugin 'vim-scripts/indentpython.vim'
 " syntax plugins
-Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css'] }
+Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css', 'python'] }
 Plugin 'nvie/vim-flake8'
 " Plugin 'vim-syntastic/syntastic'
 

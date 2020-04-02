@@ -34,9 +34,12 @@ set splitright
 set foldmethod=indent
 set foldlevel=0
 
+" removing highlight on quickfixline on first row
+highlight! link QuickFixLine Normal
+
 " flagging unnsecessary Whitespace
 highlight BadWhitespace ctermfg=red guifg=red
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufWritePost,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " letting backspace delete indent
 set backspace=indent,eol,start
@@ -70,7 +73,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 
 " emmet
-let g:user_emmet_install_global = 0
+" let g:user_emmet_install_global = 0
 
 " let g:user_emmet_settings = {
 " \  'javascript' : {
@@ -78,7 +81,7 @@ let g:user_emmet_install_global = 0
 " \  },
 " \}
 
-autocmd FileType html,css,javascript,js,jsx EmmetInstall
+" autocmd FileType html,css,javascript,js,jsx,py EmmetInstall
 
 " vim-jsx-pretty
 " let g:vim_jsx_pretty_colorful_config = 1
