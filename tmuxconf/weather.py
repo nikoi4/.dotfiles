@@ -10,4 +10,4 @@ soup = BeautifulSoup(page.content, 'html.parser')
 clima = soup.find('span', class_='estado').find('strong').text.strip().encode('ascii', 'ignore')
 temperatura = soup.find('span', class_='dato-temperatura').text.strip().encode('ascii', 'ignore')
 
-print('{clima} - {temperatura}'.format(clima=clima, temperatura=temperatura))
+print('{clima} {temperatura}'.format(clima=clima, temperatura=temperatura))

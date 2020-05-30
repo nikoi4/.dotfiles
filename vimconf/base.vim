@@ -34,6 +34,8 @@ highlight! link QuickFixLine Normal
 set backspace=indent,eol,start
 
 "Applications configurations
+" FZF
+set grepprg=rg\ --no-heading\ --vimgrep
 " nerdtree config
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader><S-N> :NERDTreeFind<CR>

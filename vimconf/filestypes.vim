@@ -14,4 +14,4 @@ highlight ws ctermbg=red guibg=red
 match ws /\s\+$/
 autocmd BufWinEnter * match ws /\s\+$/
 " ipdb
-autocmd BufNewFile,BufRead *.py inoremap ;i import ipdb;ipdb.set_trace(context=30)<Esc>_
+autocmd BufNewFile,BufRead *.py inoremap ;i __import__('ipdb').set_trace(context=30)<Esc>_
