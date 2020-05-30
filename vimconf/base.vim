@@ -57,7 +57,7 @@ nnoremap <C-H> :bp<CR>
 nnoremap <C-J> :sp<CR>
 nnoremap <C-L> :vsp<CR>
 " set/unset global clipboard
-noremap <leader>] :set clipboard=unnamedplus<CR>
+noremap <leader>] :set clipboard=unnamed<CR>
 noremap <leader>[ :set clipboard=<CR>
 " save
 noremap <leader>w :w<CR>
