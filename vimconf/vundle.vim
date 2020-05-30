@@ -12,53 +12,41 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-
-" File browsing
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'scrooloose/nerdtree'
 " git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+""" Navigating Code
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
+" File browsing
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'scrooloose/nerdtree'
+
+""" Editing
+" Snippets
+Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css', 'python'] }
 " commenting uncommenting code
 Plugin 'tpope/vim-commentary'
 " quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
-" RipGrep in Vim and display results in a quickfix list 
-Plugin 'jremmen/vim-ripgrep'
 " autopairing insert or delete brackets, parens, quotes in pair
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
 " indentation plugins
-Plugin 'vim-scripts/indentpython.vim'
-" syntax plugins
-Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css', 'python'] }
-Plugin 'nvie/vim-flake8'
-" Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-scripts/indentpython.vim'
 
-" plugins for js and react
-Plugin 'othree/yajs.vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'mhartington/oceanic-next'
-" Plugin 'dense-analysis/ale' "for lingting goto and completition js
-" Plugin 'maxmellon/vim-jsx-pretty'
-" Plugin 'vim-javascript'
+" syntax plugins
+Plugin 'nvie/vim-flake8'
+Plugin 'sheerun/vim-polyglot'
 
 " vim themes
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'kristijanhusak/vim-hybrid-material'
 
