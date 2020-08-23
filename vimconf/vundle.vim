@@ -19,7 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Pass the path to set the runtimepath properly.
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-""" Navigating Code
+"" Navigating Code
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rhubarb'
@@ -28,9 +28,9 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
 
-""" Editing
+"" Editing
 " Snippets
-Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css', 'python'] }
+Plugin 'mattn/emmet-vim', { 'for': ['javascript','js', 'jsx', 'html', 'css', 'python', 'php'] }
 " commenting uncommenting code
 Plugin 'tpope/vim-commentary'
 " quoting/parenthesizing made simple
@@ -43,8 +43,11 @@ Plugin 'jiangmiao/auto-pairs'
 " syntax plugins
 Plugin 'nvie/vim-flake8'
 Plugin 'sheerun/vim-polyglot'
+Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' }
 
-" vim themes
+"" Others
+"vim themes
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rafi/awesome-vim-colorschemes'

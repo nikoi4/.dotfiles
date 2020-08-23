@@ -10,6 +10,9 @@ set noswapfile
 set undofile
 set undodir=~/.vim/undovim
 set modifiable
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 " set autoread
 set incsearch
 set hlsearch
@@ -47,9 +50,31 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 
+" COC Enable Servers
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-css' ]
+
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
 "keyboard mappings
-" disable highlighting
+" disablie/enable highlighting
 nnoremap <leader>h :set hlsearch! hlsearch?<CR>
+" disablie/enable relativenumber
+nnoremap <leader>r :set relativenumber! relativenumber?<CR>
 " navigate buffers
 nnoremap <C-K> :bn<CR>
 nnoremap <C-H> :bp<CR>
@@ -71,3 +96,8 @@ noremap <leader>c :bd<CR>
 nnoremap <leader>f :Rg<CR>
 " browse with fzf
 nnoremap <leader>t :Files<CR>
+" GoTo code navigation.
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gy <Plug>(coc-type-definition)
+nmap <silent> <leader>gi <Plug>(coc-implementation)
+nmap <silent> <leader>gr <Plug>(coc-references)
