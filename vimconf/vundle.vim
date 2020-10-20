@@ -27,6 +27,8 @@ Plugin 'tpope/vim-rhubarb'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
+" Keyword browsing
+Plugin 'mileszs/ack.vim'
 
 "" Editing
 " Snippets
