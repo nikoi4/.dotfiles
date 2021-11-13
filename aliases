@@ -1,0 +1,71 @@
+# settings
+alias zshrc='vim $HOME/.zshrc'
+alias vimrc='vim $HOME/.vimrc'
+alias dotfiles='vim $HOME/.dotfiles'
+alias alarc='vim $HOME/.config/alacritty/alacritty.yml'
+alias aliases='vim $HOME/.dotfiles/aliases'
+# python
+alias denv="source 'env/bin/activate'"
+alias dlserve='py manage.py runserver & sleep 2; open http://127.0.0.1:8000/'
+alias py='python'
+# projects folders
+alias dist='~/eventbrite/distribution_service'
+alias ebcore='~/eventbrite/core'
+alias ebui='~/eventbrite/eb-ui'
+alias prend='~/EB/Projects/prenderme'
+alias rps='~/eventbrite/report_service'
+alias rpui='~/eventbrite/reporting-ui'
+alias sup='~/EB/Projects/suppliers_management/'
+alias sup2='~/EB/suppliers_management/'
+alias todo='~/EB/Projects/todolist'
+# ssh
+alias remssh="ssh-add ~/.ssh/id_ed25519"
+# custom
+alias comandos='vim ~/.dotfiles/comandos.txt'
+timer (){
+	MIN=$1 && for i in $(jot - $(($MIN*60)) 1); do sleep 1; done;  MSG=$2; osascript -e "display notification \"${MSG}\" with title \"Alert\""
+}
+alias alert="osascript -e 'display notification \"Process over\" with title \"Terminal\"'"
+# alias read minutes; MIN=$minutes && for i in $(jot - $(($MIN*60)) 1); do printf "\r%02d:%02d:%02d" $((i/3600)) $(( (i/60)%60)) $((i%60)); sleep 1; done; osascript -e 'display notification \"Process over\" with title \"Terminal\"'"
+
+# apps
+volume (){
+  local app="$1"
+  local volume="$2"
+  local tell="tell application \"${app}\""
+  local action="set the sound volume to $volume"
+  echo $action
+  osascript -e "$tell" -e "$action" -e 'end tell'
+}
+pause (){
+  local app="$1"
+  local tell="tell application \"${app}\""
+  local action="pause"
+  echo $action
+  osascript -e "$tell" -e "$action" -e 'end tell'
+}
+play (){
+  local app="$1"
+  local tell="tell application \"${app}\""
+  local action="play"
+  echo $action
+  osascript -e "$tell" -e "$action" -e 'end tell'
+}
+next (){
+  local app="$1"
+  local tell="tell application \"${app}\""
+  local action="next track"
+  echo $action
+  osascript -e "$tell" -e "$action" -e 'end tell'
+}
+mic (){
+  local volume="$1"
+  echo $volume
+  osascript -e "set volume input volume $volume"
+}
+setVolume (){
+  local volume="$1"
+  echo $volume
+  osascript -e "set volume output volume $volume"
+}
+

@@ -1,0 +1,3 @@
+VIM:
+    json pretty
+        open file and do :%!jq '.'
